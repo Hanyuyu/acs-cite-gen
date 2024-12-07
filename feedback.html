@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provide feedback on ACS Citation Generator. Help us improve our citation tool.">
+    <meta name="keywords" content="feedback, suggestions, bug report, citation tool feedback">
+    <title>Feedback | ACS Citation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="ACS Citation Generator Logo" class="logo">
+                    <span class="brand-name">ACS Citation Generator</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Citation Generator</a>
+                <a href="guide.html">Guide</a>
+                <a href="examples.html">Examples</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="feedback-content">
+        <h1>Feedback</h1>
+        <p class="feedback-intro">Your feedback helps us improve our citation generator. Please share your thoughts, report issues, or suggest new features.</p>
+
+        <section class="feedback-section">
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-group">
+                    <label for="feedbackType">Type of Feedback*</label>
+                    <select id="feedbackType" required>
+                        <option value="">Select feedback type</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required placeholder="Your email address">
+                    <small>We'll only use this to follow up on your feedback if necessary.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" required placeholder="Brief description of your feedback">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" required rows="6" placeholder="Please provide detailed feedback..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="subscribe">
+                        Keep me updated on how my feedback is being addressed
+                    </label>
+                </div>
+
+                <button type="submit" class="primary-button">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section class="feedback-section">
+            <h2>Other Ways to Reach Us</h2>
+            <div class="contact-options">
+                <div class="contact-card">
+                    <h3>Email Support</h3>
+                    <p>For urgent issues or direct communication:</p>
+                    <a href="mailto:support@acscitegen.com">support@acscitegen.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Help Center</h3>
+                    <p>Browse our help articles and FAQs:</p>
+                    <a href="help.html">Visit Help Center</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Citation Guide</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="guide.html">ACS Style Guide</a></li>
+                    <li><a href="guide.html#basics">Citation Basics</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="support.html">Report Issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide free citation tools following the American Chemical Society style guidelines to help researchers and students create accurate citations.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ACS Citation Generator. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="cookies.html">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your feedback! We will review it and get back to you if necessary.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

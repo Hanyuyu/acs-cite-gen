@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate ACS style citations easily with our free ACS Citation Generator. Perfect for academic papers and research articles.">
+    <meta name="keywords" content="ACS citation generator, ACS reference generator, citation formatting, academic citations">
+    <title>ACS Citation Generator | Format References in ACS Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="ACS Citation Generator Logo" class="logo">
+                    <span class="brand-name">ACS Citation Generator</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Citation Generator</a>
+                <a href="guide.html">Guide</a>
+                <a href="examples.html">Examples</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>ACS Citation Generator</h1>
+            <p class="subtitle">Generate accurate citations in American Chemical Society format</p>
+            <p class="description">Fast, free, and following the latest ACS Style Guide requirements</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="citation-form">
+            <form id="citationForm" aria-label="Citation information form">
+                <div class="form-group">
+                    <label for="authors">Authors*</label>
+                    <input type="text" id="authors" required 
+                           placeholder="e.g., Smith, J. A.; Johnson, M. B."
+                           aria-required="true">
+                    <small>Separate multiple authors with semicolons</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Article Title*</label>
+                    <input type="text" id="title" required 
+                           placeholder="Enter the full title of the article"
+                           aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="journal">Journal Name*</label>
+                    <input type="text" id="journal" required 
+                           placeholder="e.g., J. Am. Chem. Soc."
+                           aria-required="true">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="year">Year*</label>
+                        <input type="number" id="year" required 
+                               placeholder="YYYY"
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volume">Volume*</label>
+                        <input type="text" id="volume" required 
+                               placeholder="e.g., 42"
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issue">Issue</label>
+                        <input type="text" id="issue" 
+                               placeholder="e.g., 3">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Pages*</label>
+                    <input type="text" id="pages" required 
+                           placeholder="e.g., 1234-1238"
+                           aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="doi">DOI</label>
+                    <input type="text" id="doi" 
+                           placeholder="e.g., 10.1021/jacs.xxx.xxxxx">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="primary-button">Generate Citation</button>
+                    <button type="button" id="clearForm" class="secondary-button">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="citation-result" aria-live="polite">
+            <div class="result-container" hidden>
+                <h2>Generated Citation</h2>
+                <div class="citation-text" id="citationResult"></div>
+                <div class="result-actions">
+                    <button id="copyButton" class="action-button">
+                        Copy Citation
+                    </button>
+                    <button id="downloadButton" class="action-button">
+                        Download as .txt
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Citation Guide</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="guide.html">ACS Style Guide</a></li>
+                    <li><a href="examples.html">Citation Examples</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="support.html">Report Issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide free citation tools following the American Chemical Society style guidelines to help researchers and students create accurate citations.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ACS Citation Generator. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="cookies.html">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

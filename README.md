@@ -101,7 +101,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 
 ## next version
-please visit our next version，see [acs-citation-generator.com](acs-citation-generator.com)
----
 
+please visit our next version，see [acs-citation-generator.com](https://acs-citation-generator.com)
+
+--- 
 Last Updated: December 14, 2024

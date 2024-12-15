@@ -99,6 +99,9 @@ This project welcomes contributions from the community. Whether it's:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
+## next version
+please visit our next version，see [acs-citation-generator.com](acs-citation-generator.com)
 ---
 
 Last Updated: December 14, 2024
